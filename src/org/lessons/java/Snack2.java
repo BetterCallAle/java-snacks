@@ -10,6 +10,7 @@ public class Snack2 {
         * il Grande Gatsby ha una lista di nomi e una lista di cognomi,
         * e da queste vuole mostrare a video una falsa lista di invitati con nome e cognome.
         * */
+
         Random random = new Random();
 
 
@@ -17,7 +18,7 @@ public class Snack2 {
         String[] guestsSurname = {"Franco", "Carrisi", "Costanzo"};
 
         String[] fakeNames = new String[3];
-        int maxRandomValue = fakeNames.length - 1;
+        int maxRandomValue = fakeNames.length;
 
         for (int i = 0; i < fakeNames.length ; i++) {
             fakeNames[i] = guestsName[random.nextInt(maxRandomValue)] + " " + guestsSurname[random.nextInt(maxRandomValue)];
